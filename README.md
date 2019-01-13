@@ -1,7 +1,16 @@
 # Simulation-for-GraphicDesign  
 
 
+物理シミュレーションを使って平面のデザインを作る。  
+シミュレーションと、シミュレーション風の違い、それに対する態度とか気分とか、研究と合わせてちょっとなんか書く。  
 
+
+- 研究メモ制作メモ（[https://github.com/naysok/Simulation-for-GraphicDesign/blob/master/Aesthetics.md](https://github.com/naysok/Simulation-for-GraphicDesign/blob/master/Aesthetics.md)）  
+
+- 自動処理スクリプトメモ（[https://github.com/naysok/Simulation-for-GraphicDesign/blob/master/Make2d-ExportAiFile.md](https://github.com/naysok/Simulation-for-GraphicDesign/blob/master/Make2d-ExportAiFile.md)）  
+
+
+---
 
 
 ### Wind Simulation /w Kangaroo2  
@@ -13,28 +22,6 @@
 
 ![photo](Wind-Flag.jpg)  
 
-
-
----  
-
----  
-
-
-
-### Ref  
-
-シミュレーションを用いた平面デザインで挙げられるのは、有名なのはこれとか。  
-
-### Being Not Truth / Ralph Ammer and Stefan Sagmeister (2006)  
-
-くもの巣のシミュレーション  
-
-![photo](photo-ref/Being-Not-Truth.jpg)  
-
-プロジェクションされている壁面の前を通ると、くもの巣と干渉し、伸びたり絡まったり千切れたりするインタラクションがある。  
-
-[![](https://img.youtube.com/vi/U--PIzSuOv8/0.jpg)](https://www.youtube.com/watch?v=U--PIzSuOv8)  
-（↑ jump to youtube）  
 
 
 ---  
