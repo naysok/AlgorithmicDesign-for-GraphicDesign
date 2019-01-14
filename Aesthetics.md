@@ -1,5 +1,9 @@
 # コンピュータを用いて制作を行う  
 
+シミュレーションと、シミュレーション風の違い、それに対する態度とか気分とか、研究と合わせてちょっとなんか書く。  
+
+
+### 射程  
 
 Algorithmic Design, Procedural Design, Parametric Design, Computational Design, Generative Design  
 
