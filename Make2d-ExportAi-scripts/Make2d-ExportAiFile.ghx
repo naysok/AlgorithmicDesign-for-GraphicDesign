@@ -48,10 +48,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>111</X>
-                  <Y>51</Y>
+                  <X>-1599</X>
+                  <Y>-422</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">0.40959996</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -83,9 +83,9 @@
         </chunk>
         <chunk name="DefinitionObjects">
           <items count="1">
-            <item name="ObjectCount" type_name="gh_int32" type_code="3">19</item>
+            <item name="ObjectCount" type_name="gh_int32" type_code="3">18</item>
           </items>
-          <chunks count="19">
+          <chunks count="18">
             <chunk name="Object" index="0">
               <items count="3">
                 <item name="GUID" type_name="gh_guid" type_code="9">410755b1-224a-4c1e-a407-bf32fb45ea7e</item>
@@ -106,10 +106,10 @@ sc.doc = Rhino.RhinoDoc.ActiveDoc
 
 len_brep = ghpc.ListLength(Brep)
 len_crv = ghpc.ListLength(Crv)
-# print len
 
-bake_brep = []
-bake_crv = []
+# bake_brep = []
+# bake_crv = []
+
 
 out_flie = path + name + ".ai"
 
@@ -118,7 +118,7 @@ out_flie = path + name + ".ai"
 if y == True:
     
     
-    for i in range(len_brep):
+    for i in xrange(len_brep):
         sel_brep = ghpc.ListItem(Brep, i)
         # print i
         # print sel_geo
@@ -127,11 +127,12 @@ if y == True:
         
         
         
-    for j in range(len_crv):
+    for j in xrange(len_crv):
         sel_crv = ghpc.ListItem(Crv, j)
         sc.doc.Objects.AddCurve(sel_crv)
         ##bake_crv.append(sel_crv)
         #pass
+        
     
     #print bake_geos
 
@@ -164,8 +165,8 @@ if y == True:
     #rs.Command(' _SelAll _-Export a.ai _Enter _Ente</item>
                     <item name="Description" type_name="gh_string" type_code="10">A python scriptable component</item>
                     <item name="EditorLocation" type_name="gh_drawing_point" type_code="30">
-                      <X>970</X>
-                      <Y>66</Y>
+                      <X>124</X>
+                      <Y>124</Y>
                     </item>
                     <item name="EditorSize" type_name="gh_drawing_size" type_code="32">
                       <W>1136</W>
@@ -180,7 +181,7 @@ if y == True:
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1990</X>
                           <Y>670</Y>
@@ -191,6 +192,7 @@ if y == True:
                           <X>2052</X>
                           <Y>722</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="ParameterData">
@@ -222,7 +224,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1992</X>
                                   <Y>672</Y>
@@ -233,6 +235,7 @@ if y == True:
                                   <X>2016</X>
                                   <Y>682</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -253,7 +256,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1992</X>
                                   <Y>692</Y>
@@ -264,6 +267,7 @@ if y == True:
                                   <X>2016</X>
                                   <Y>702</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -285,7 +289,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1992</X>
                                   <Y>712</Y>
@@ -296,6 +300,7 @@ if y == True:
                                   <X>2016</X>
                                   <Y>722</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -317,7 +322,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1992</X>
                                   <Y>732</Y>
@@ -328,6 +333,7 @@ if y == True:
                                   <X>2016</X>
                                   <Y>742</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -348,7 +354,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1992</X>
                                   <Y>752</Y>
@@ -359,6 +365,7 @@ if y == True:
                                   <X>2016</X>
                                   <Y>762</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -374,7 +381,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>2067</X>
                                   <Y>672</Y>
@@ -385,6 +392,7 @@ if y == True:
                                   <X>2084</X>
                                   <Y>697</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -400,7 +408,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>2067</X>
                                   <Y>722</Y>
@@ -411,6 +419,7 @@ if y == True:
                                   <X>2084</X>
                                   <Y>747</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -441,7 +450,7 @@ if y == True:
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="5">
+                      <items count="6">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>2084</X>
                           <Y>1005</Y>
@@ -455,6 +464,7 @@ if y == True:
                           <X>2084.763</X>
                           <Y>1005.234</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="PanelProperties">
@@ -489,7 +499,7 @@ if y == True:
                   </items>
                   <chunks count="7">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>364</X>
                           <Y>455</Y>
@@ -500,6 +510,7 @@ if y == True:
                           <X>400</X>
                           <Y>497</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="param_input" index="0">
@@ -513,7 +524,7 @@ if y == True:
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>366</X>
                               <Y>457</Y>
@@ -524,6 +535,7 @@ if y == True:
                               <X>377</X>
                               <Y>467</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                         <chunk name="PersistentData">
@@ -569,7 +581,7 @@ if y == True:
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>366</X>
                               <Y>477</Y>
@@ -580,6 +592,7 @@ if y == True:
                               <X>377</X>
                               <Y>487</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                         <chunk name="PersistentData">
@@ -618,7 +631,7 @@ if y == True:
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>366</X>
                               <Y>497</Y>
@@ -629,6 +642,7 @@ if y == True:
                               <X>377</X>
                               <Y>507</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                         <chunk name="PersistentData">
@@ -667,7 +681,7 @@ if y == True:
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>366</X>
                               <Y>517</Y>
@@ -678,6 +692,7 @@ if y == True:
                               <X>377</X>
                               <Y>527</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                         <chunk name="PersistentData">
@@ -713,7 +728,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>415</X>
                               <Y>457</Y>
@@ -724,6 +739,7 @@ if y == True:
                               <X>426</X>
                               <Y>477</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -739,7 +755,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>415</X>
                               <Y>497</Y>
@@ -750,6 +766,7 @@ if y == True:
                               <X>426</X>
                               <Y>517</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -774,7 +791,7 @@ if y == True:
                   </items>
                   <chunks count="3">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>563</X>
                           <Y>463</Y>
@@ -785,6 +802,7 @@ if y == True:
                           <X>598</X>
                           <Y>477</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="param_input" index="0">
@@ -800,7 +818,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>565</X>
                               <Y>465</Y>
@@ -811,6 +829,7 @@ if y == True:
                               <X>575.5</X>
                               <Y>477</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -827,7 +846,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>613</X>
                               <Y>465</Y>
@@ -838,6 +857,7 @@ if y == True:
                               <X>624</X>
                               <Y>477</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -862,7 +882,7 @@ if y == True:
                   </items>
                   <chunks count="4">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>805</X>
                           <Y>508</Y>
@@ -873,6 +893,7 @@ if y == True:
                           <X>842</X>
                           <Y>530</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="param_input" index="0">
@@ -887,7 +908,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>807</X>
                               <Y>510</Y>
@@ -898,6 +919,7 @@ if y == True:
                               <X>818.5</X>
                               <Y>520</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -914,7 +936,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>807</X>
                               <Y>530</Y>
@@ -925,6 +947,7 @@ if y == True:
                               <X>818.5</X>
                               <Y>540</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -940,7 +963,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>857</X>
                               <Y>510</Y>
@@ -951,6 +974,7 @@ if y == True:
                               <X>867.5</X>
                               <Y>530</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -975,7 +999,7 @@ if y == True:
                   </items>
                   <chunks count="3">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>691</X>
                           <Y>582</Y>
@@ -986,6 +1010,7 @@ if y == True:
                           <X>726</X>
                           <Y>596</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="param_input" index="0">
@@ -999,7 +1024,7 @@ if y == True:
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>693</X>
                               <Y>584</Y>
@@ -1010,6 +1035,7 @@ if y == True:
                               <X>703.5</X>
                               <Y>596</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                         <chunk name="PersistentData">
@@ -1045,7 +1071,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>741</X>
                               <Y>584</Y>
@@ -1056,6 +1082,7 @@ if y == True:
                               <X>752</X>
                               <Y>596</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -1082,7 +1109,7 @@ if y == True:
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>364</X>
                           <Y>696</Y>
@@ -1093,6 +1120,7 @@ if y == True:
                           <X>389.9915</X>
                           <Y>708.6093</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="PersistentData">
@@ -1142,7 +1170,7 @@ if y == True:
                   </items>
                   <chunks count="5">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>614</X>
                           <Y>696</Y>
@@ -1153,6 +1181,7 @@ if y == True:
                           <X>651</X>
                           <Y>728</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="param_input" index="0">
@@ -1167,7 +1196,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>616</X>
                               <Y>698</Y>
@@ -1178,6 +1207,7 @@ if y == True:
                               <X>627.5</X>
                               <Y>708</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -1193,7 +1223,7 @@ if y == True:
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>616</X>
                               <Y>718</Y>
@@ -1204,6 +1234,7 @@ if y == True:
                               <X>627.5</X>
                               <Y>728</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                         <chunk name="PersistentData">
@@ -1240,7 +1271,7 @@ if y == True:
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>616</X>
                               <Y>738</Y>
@@ -1251,6 +1282,7 @@ if y == True:
                               <X>627.5</X>
                               <Y>748</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                         <chunk name="PersistentData">
@@ -1287,7 +1319,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>666</X>
                               <Y>698</Y>
@@ -1298,6 +1330,7 @@ if y == True:
                               <X>677</X>
                               <Y>728</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -1323,7 +1356,7 @@ if y == True:
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>364</X>
                           <Y>740</Y>
@@ -1334,6 +1367,7 @@ if y == True:
                           <X>364.3915</X>
                           <Y>740.8813</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="Slider">
@@ -1367,7 +1401,7 @@ if y == True:
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1038</X>
                           <Y>586</Y>
@@ -1378,6 +1412,7 @@ if y == True:
                           <X>1083</X>
                           <Y>618</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="ParameterData">
@@ -1404,7 +1439,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1040</X>
                                   <Y>588</Y>
@@ -1415,6 +1450,7 @@ if y == True:
                                   <X>1055.5</X>
                                   <Y>598</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -1433,7 +1469,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1040</X>
                                   <Y>608</Y>
@@ -1444,6 +1480,7 @@ if y == True:
                                   <X>1055.5</X>
                                   <Y>618</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -1461,7 +1498,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1040</X>
                                   <Y>628</Y>
@@ -1472,6 +1509,7 @@ if y == True:
                                   <X>1055.5</X>
                                   <Y>638</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -1488,7 +1526,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1098</X>
                                   <Y>588</Y>
@@ -1499,6 +1537,7 @@ if y == True:
                                   <X>1109</X>
                                   <Y>618</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -1527,7 +1566,7 @@ if y == True:
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>364</X>
                           <Y>880</Y>
@@ -1538,6 +1577,7 @@ if y == True:
                           <X>389.6489</X>
                           <Y>892.0414</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="PersistentData">
@@ -1700,7 +1740,7 @@ if y == True:
                   </items>
                   <chunks count="4">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1301</X>
                           <Y>869</Y>
@@ -1711,6 +1751,7 @@ if y == True:
                           <X>1337</X>
                           <Y>891</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="param_input" index="0">
@@ -1726,7 +1767,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>1303</X>
                               <Y>871</Y>
@@ -1737,6 +1778,7 @@ if y == True:
                               <X>1314</X>
                               <Y>881</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -1752,7 +1794,7 @@ if y == True:
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>1303</X>
                               <Y>891</Y>
@@ -1763,6 +1805,7 @@ if y == True:
                               <X>1314</X>
                               <Y>901</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                         <chunk name="PersistentData">
@@ -1799,7 +1842,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>1352</X>
                               <Y>871</Y>
@@ -1810,6 +1853,7 @@ if y == True:
                               <X>1363</X>
                               <Y>891</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -1834,7 +1878,7 @@ if y == True:
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1038</X>
                           <Y>869</Y>
@@ -1845,6 +1889,7 @@ if y == True:
                           <X>1083</X>
                           <Y>891</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="ParameterData">
@@ -1870,7 +1915,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1040</X>
                                   <Y>871</Y>
@@ -1881,6 +1926,7 @@ if y == True:
                                   <X>1055.5</X>
                                   <Y>881</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -1898,7 +1944,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1040</X>
                                   <Y>891</Y>
@@ -1909,6 +1955,7 @@ if y == True:
                                   <X>1055.5</X>
                                   <Y>901</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -1925,7 +1972,7 @@ if y == True:
                           </items>
                           <chunks count="1">
                             <chunk name="Attributes">
-                              <items count="2">
+                              <items count="3">
                                 <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                                   <X>1098</X>
                                   <Y>871</Y>
@@ -1936,6 +1983,7 @@ if y == True:
                                   <X>1109</X>
                                   <Y>891</Y>
                                 </item>
+                                <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                               </items>
                             </chunk>
                           </chunks>
@@ -1961,7 +2009,7 @@ if y == True:
                   </items>
                   <chunks count="4">
                     <chunk name="Attributes">
-                      <items count="2">
+                      <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1301</X>
                           <Y>596</Y>
@@ -1972,6 +2020,7 @@ if y == True:
                           <X>1337</X>
                           <Y>618</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="param_input" index="0">
@@ -1987,7 +2036,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>1303</X>
                               <Y>598</Y>
@@ -1998,6 +2047,7 @@ if y == True:
                               <X>1314</X>
                               <Y>608</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -2013,7 +2063,7 @@ if y == True:
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>1303</X>
                               <Y>618</Y>
@@ -2024,6 +2074,7 @@ if y == True:
                               <X>1314</X>
                               <Y>628</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                         <chunk name="PersistentData">
@@ -2060,7 +2111,7 @@ if y == True:
                       </items>
                       <chunks count="1">
                         <chunk name="Attributes">
-                          <items count="2">
+                          <items count="3">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                               <X>1352</X>
                               <Y>598</Y>
@@ -2071,6 +2122,7 @@ if y == True:
                               <X>1363</X>
                               <Y>618</Y>
                             </item>
+                            <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                           </items>
                         </chunk>
                       </chunks>
@@ -2088,31 +2140,32 @@ if y == True:
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bb1fb8fe-0e1d-4b26-8421-e45a7d301f34</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e275e76-071e-437f-b388-f89ad42fb17b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10"></item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">ab67ceda-495d-415d-84df-ff588c6bf04a</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">2147e252-ab3b-4f79-bfad-0188340805a8</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10">Double click to edit panel content…</item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="5">
+                      <items count="6">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>1441</X>
-                          <Y>966</Y>
+                          <X>1430</X>
+                          <Y>690</Y>
                           <W>160</W>
-                          <H>201</H>
+                          <H>100</H>
                         </item>
                         <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
                         <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
                         <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1441.462</X>
-                          <Y>966.8621</Y>
+                          <X>1430.212</X>
+                          <Y>690.8713</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="PanelProperties">
@@ -2138,33 +2191,33 @@ if y == True:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="9">
+                  <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e275e76-071e-437f-b388-f89ad42fb17b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">571b885b-47dd-4af0-91f9-1a73e67ea9b4</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10"></item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">2147e252-ab3b-4f79-bfad-0188340805a8</item>
-                    <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">Double click to edit panel content…</item>
+                    <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+                    <item name="UserText" type_name="gh_string" type_code="10">C:\Users\yoshioca\Documents\Simulation-for-GraphicDesign\</item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="5">
+                      <items count="6">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>1430</X>
-                          <Y>690</Y>
-                          <W>160</W>
+                          <X>1718</X>
+                          <Y>471</Y>
+                          <W>463</W>
                           <H>100</H>
                         </item>
                         <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
                         <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
                         <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1430.212</X>
-                          <Y>690.8713</Y>
+                          <X>1718.236</X>
+                          <Y>471.6239</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="PanelProperties">
@@ -2192,30 +2245,31 @@ if y == True:
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">571b885b-47dd-4af0-91f9-1a73e67ea9b4</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">99e2aebb-7f04-4b0d-bc9c-d556cfef1156</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10"></item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">C:\Users\yoshioca\Documents\Simulation-for-GraphicDesign\</item>
+                    <item name="UserText" type_name="gh_string" type_code="10">Make2d-ExportAiFile</item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="5">
+                      <items count="6">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>1718</X>
-                          <Y>471</Y>
+                          <X>973</X>
+                          <Y>193</Y>
                           <W>463</W>
-                          <H>100</H>
+                          <H>105</H>
                         </item>
                         <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
                         <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
                         <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1718.236</X>
-                          <Y>471.6239</Y>
+                          <X>973.186</X>
+                          <Y>193.3651</Y>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                     <chunk name="PanelProperties">
@@ -2236,57 +2290,6 @@ if y == True:
             </chunk>
             <chunk name="Object" index="17">
               <items count="2">
-                <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
-                <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-              </items>
-              <chunks count="1">
-                <chunk name="Container">
-                  <items count="8">
-                    <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">99e2aebb-7f04-4b0d-bc9c-d556cfef1156</item>
-                    <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10"></item>
-                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                    <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">Make2d-ExportAiFile</item>
-                  </items>
-                  <chunks count="2">
-                    <chunk name="Attributes">
-                      <items count="5">
-                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>973</X>
-                          <Y>193</Y>
-                          <W>463</W>
-                          <H>105</H>
-                        </item>
-                        <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
-                        <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>973.186</X>
-                          <Y>193.3651</Y>
-                        </item>
-                      </items>
-                    </chunk>
-                    <chunk name="PanelProperties">
-                      <items count="6">
-                        <item name="Colour" type_name="gh_drawing_color" type_code="36">
-                          <ARGB>255;255;250;90</ARGB>
-                        </item>
-                        <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
-                        <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Multiline" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Stream" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
-                      </items>
-                    </chunk>
-                  </chunks>
-                </chunk>
-              </chunks>
-            </chunk>
-            <chunk name="Object" index="18">
-              <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">a8b97322-2d53-47cd-905e-b932c3ccd74e</item>
                 <item name="Name" type_name="gh_string" type_code="10">Button</item>
               </items>
@@ -2304,13 +2307,14 @@ if y == True:
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="1">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1905</X>
                           <Y>987</Y>
                           <W>119</W>
                           <H>22</H>
                         </item>
+                        <item name="Selected" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2324,7 +2328,7 @@ if y == True:
     <chunk name="Thumbnail">
       <items count="1">
         <item name="Thumbnail" type_name="gh_drawing_bitmap" type_code="37">
-          <bitmap length="4042">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</bitmap>
+          <bitmap length="6509">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</bitmap>
         </item>
       </items>
     </chunk>
