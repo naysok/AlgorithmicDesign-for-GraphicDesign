@@ -32,7 +32,7 @@
 
 あとで、Make2d でみるなら、サーフェスで。  
 
-![photo](WindSimlation/Wind-Flag.jpg)  
+![photo](WindSimulation/Wind-Flag.jpg)  
 
 
 
