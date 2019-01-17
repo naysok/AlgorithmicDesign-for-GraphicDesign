@@ -9,7 +9,13 @@ Make2d と Export を自動化するスクリプト。
 
 無理やりやってます。 詳細はコードの下に貼っておきます。  
 
-Input は、ListAccess に。
+Input は、ListAccess に設定。  
+
+
+bool を入れる y を Bottom にすると、  
+Grasshopper が編集不可の状態になることがある（？）、Toggle で。  
+Bottom だと、ファイル書き出しで欠損することもあったので、ちょっとなんかあるときはこれを試すと良さそう。  
+
 
 
 ```python
@@ -19,15 +25,10 @@ import scriptcontext as sc
 import ghpythonlib.components as ghpc
 
 
-sc.doc = Rhino.RhinoDoc.ActiveDoc
-
 
 len_brep = ghpc.ListLength(Brep)
 len_crv = ghpc.ListLength(Crv)
-# print len
 
-bake_brep = []
-bake_crv = []
 
 out_flie = path + name + ".ai"
 
@@ -36,42 +37,37 @@ out_flie = path + name + ".ai"
 if y == True:
 
 
-    for i in range(len_brep):
+    sc.doc = Rhino.RhinoDoc.ActiveDoc
+
+    for i in xrange(len_brep):
         sel_brep = ghpc.ListItem(Brep, i)
-        # print i
-        # print sel_geo
         sc.doc.Objects.AddBrep(sel_brep)
-        ##bake_brep.append(sel_brep)
 
 
-
-    for j in range(len_crv):
+    for j in xrange(len_crv):
         sel_crv = ghpc.ListItem(Crv, j)
         sc.doc.Objects.AddCurve(sel_crv)
-        ##bake_crv.append(sel_crv)
-        #pass
-
-    #print bake_geos
-
-
-    #sc.doc.Objects.AddBrep(bake_brep)
-    #sc.doc.Objects.AddCurve(bake_crv)
-
-
 
 
     rs.CurrentView("Perspective")
 
-    rs.Command('SelAll -Make2d DrawingLayout=CurrentView '
+
+    rs.Command(
+        'SelAll'
+        + ' -Make2d DrawingLayout=CurrentView '
         + ' ShowTangentEdges=Yes '
         + ' CreateHiddenLines=No '
         + ' ShowViewRectangle=No '
         + ' MaintainSourceLayers=Yes _Enter ')
 
+
     rs.CurrentView("Top")
 
-    rs.Command(' -Export ' + out_flie + ' _Enter'
+
+    rs.Command(
+        ' -Export ' + out_flie + ' _Enter'
         + ' SelAll Delete')
+
 
     rs.CurrentView("Perspective")
 
