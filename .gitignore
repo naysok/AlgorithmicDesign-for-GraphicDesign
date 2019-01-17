@@ -1,6 +1,3 @@
 .DS_Store
 
 *.ai
-
-/make2d-ExportAi-scripts/*.ai
-!/make2d-ExportAi-scripts/*.ai
