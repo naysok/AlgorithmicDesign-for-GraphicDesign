@@ -37,8 +37,21 @@ Illustrator をはじめとする Adobe のソフトウェアは、ニューメ�
 ---  
 
 
-### Helooooo-Wooooorld  
+### Hellooooo-Wooooorld  
 
+
+反復シリーズ。  
+Grasshopper で、テキストのアウトラインに奥行きをつけた。  
+
+![photo](Hellooooo-Wooooorld/Hellooooo-Wooooorld.jpg)  
+
+ペンプロッターで書いた。  
+書いてみると、画面で見るのとはまた違う、ぼやけているみたいな感じが出たので良かった。  
+
+![photo](Hellooooo-Wooooorld/Hellooooo-Wooooorld-Plotter.jpg)  
+
+ジョン前田のモリサワの反復のあれこれの真似をちまちましていたところ、線画で綺麗に成立しそうなの、がこれとか。  
+反復シリーズはもう少し攻めれると思う。  
 
 
 
@@ -53,7 +66,7 @@ Illustrator をはじめとする Adobe のソフトウェアは、ニューメ�
 
 ### WindSimulation  
 
-/w Kangaroo2  
+/w Grasshopper, Kangaroo2  
 
 サーフェスのモーフィングは重いので、シミュレーションとは切り離す方が良さそう。  
 
