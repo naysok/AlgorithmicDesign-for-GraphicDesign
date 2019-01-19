@@ -1,7 +1,7 @@
 # AlgorithmicDesign-for-GraphicDesign  
 
 
-コンピュータを用いて制作を行う。  
+コンピュータを用いて制作を行う（ことについての美学？）。  
 
 
 アルゴリズミックデザインとか呼ばれるものとかを考える。  
@@ -9,14 +9,28 @@
 シミュレーション / シミュレーション風の違い、それに対する態度とか気分とか、研究と合わせてちょっとなんか書く。  
 
 
-- 研究メモ制作メモ（[https://github.com/naysok/AlgorithmicDesign-for-GraphicDesign/blob/master/Aesthetics.md](https://github.com/naysok/AlgorithmicDesign-for-GraphicDesign/blob/master/Aesthetics.md)）  
+- 研究メモ制作メモ（[Aesthetics.md](https://github.com/naysok/AlgorithmicDesign-for-GraphicDesign/blob/master/Aesthetics.md)）  
 
-- 自動処理スクリプトメモ（[https://github.com/naysok/AlgorithmicDesign-for-GraphicDesign/blob/master/Make2d-ExportAi-scripts/Make2d-ExportAiFile.md](https://github.com/naysok/AlgorithmicDesign-for-GraphicDesign/blob/master/Make2d-ExportAi-scripts/Make2d-ExportAiFile.md)）  
+- 自動処理スクリプトメモ（[Make2d-ExportAiFile.md](https://github.com/naysok/AlgorithmicDesign-for-GraphicDesign/blob/master/Make2d-ExportAi-scripts/Make2d-ExportAiFile.md)）  
 
 
 ---
 
 ---  
+
+
+# それぞれのシリーズについて  
+
+手仕事の延長の上から3つと、1番下の脳の進化（置き替え?）の1つ。  
+
+- Outline-Outline-Outline  
+- Hellooooo-Wooooorld  
+- Text-Metaball-Contouring  
+- WindSimulation  
+
+
+---  
+
 
 ### Outline-Outline-Outline  
 
@@ -64,16 +78,23 @@ Grasshopper で、テキストのアウトラインに奥行きをつけた。
 
 ---  
 
+
 ### WindSimulation  
 
-/w Grasshopper, Kangaroo2  
 
+物理シミュレーションシリーズ。  
+とりあえず、脳の進化系、Computational Design, Generative Design を用いたデザインと位置付けてみる。  
+与条件を作って、形状はコンピュータの計算結果に任せる。  
+
+![photo](WindSimulation/Flag-Right-200-203.jpg)  
+
+シミュレーションはこんな感じ。  
 サーフェスのモーフィングは重いので、シミュレーションとは切り離す方が良さそう。  
-
-あとで、Make2d でみるなら、サーフェスで。  
+あとで、Make2d で線画にするなら、サーフェスで。  
 
 ![photo](WindSimulation/Wind-Flag.jpg)  
 
+パラパラ漫画にしたい、かも。  
 
 
 ---  
