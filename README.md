@@ -43,7 +43,7 @@
 ベース文字の Futura の O とか、! マークとかすごくいい感じ。  
 
 イラレで文字のアウトライン化、パスのアウトライン化を繰り返す。  
-手のレタリングでもできることはできるが面倒。Adobe Illustrator の機能を、手で繰り返し操作することでこうなる。  
+手のレタリングでもできることはできるが面倒。Adobe Illustrator の機能を、手で繰り返し適用することでこうなる。（反復シリーズとも言えてしまう？）  
 Illustrator をはじめとする Adobe のソフトウェアは、ニューメディアの言語の中で、諸原則として挙げられる「低次」の自動化の最たるものと言える。  
 
 
@@ -55,7 +55,7 @@ Illustrator をはじめとする Adobe のソフトウェアは、ニューメ�
 
 
 反復シリーズ。  
-Grasshopper で、テキストのアウトラインに奥行きをつけた。  
+Grasshopper で、テキストのアウトラインをスケール変更の操作をスクリプトによって繰り返し、奥行きのような表現をつけた。  
 
 ![photo](Hellooooo-Wooooorld/Hellooooo-Wooooorld.jpg)  
 
@@ -82,7 +82,7 @@ Grasshopper で、テキストのアウトラインに奥行きをつけた。
 ### WindSimulation  
 
 
-物理シミュレーションシリーズ。  
+シミュレーションシリーズ（風と布）。  
 とりあえず、脳の進化系、Computational Design, Generative Design を用いたデザインと位置付けてみる。  
 与条件を作って、形状はコンピュータの計算結果に任せる。  
 
@@ -95,6 +95,15 @@ Grasshopper で、テキストのアウトラインに奥行きをつけた。
 ![photo](WindSimulation/Wind-Flag.jpg)  
 
 パラパラ漫画にしたい、かも。  
+
+
+ちなみに、布（Cloth）のシミュレーションは、CG の歴史でも王道の1つ（多分）  
+[https://en.wikipedia.org/wiki/Computer_simulation](https://en.wikipedia.org/wiki/Computer_simulation)  
+
+たとえば、three.js の Examples ではこんな感じ。（[https://threejs.org/examples/#webgl_animation_cloth](https://threejs.org/examples/#webgl_animation_cloth)）  
+
+![photo](WindSimulation/Wind-threejs.png)  
+
 
 
 ---  
