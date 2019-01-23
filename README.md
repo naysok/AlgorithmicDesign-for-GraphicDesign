@@ -84,6 +84,11 @@ Grasshopper で、テキストのアウトラインをスケール変更の操�
 
 ![photo](Text-Metaball-Contouring/Text-Metaball-Contouring.jpg)  
 
+Calculate Marching Cubes  
+w/ Cocoon（[http://www.bespokegeometry.com/2015/07/22/cocoon/](http://www.bespokegeometry.com/2015/07/22/cocoon/)）  
+
+![photo](Text-Metaball-Contouring/Text-Metaball.jpg)  
+
 （良い意味で）バカっぽい、安っぽいアルファベットの風船（[Google 画像検索](https://www.google.com/search?q=Alphabet+Balloon&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj7xuXlt_rfAhXNA4gKHaMKCMAQ_AUIDigB&biw=1298&bih=889&dpr=1.5)）  
 
 ![photo](Text-Metaball-Contouring/AlphabetBalloon.png)  
