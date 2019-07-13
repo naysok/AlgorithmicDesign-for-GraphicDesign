@@ -22,36 +22,29 @@ Bottom だと、ファイル書き出しで欠損することもあったので�
 import Rhino
 import rhinoscriptsyntax as rs
 import scriptcontext as sc
-import ghpythonlib.components as ghpc
+
+
+out_flie = PATH + NAME + ".ai"
 
 
 
-len_brep = ghpc.ListLength(Brep)
-len_crv = ghpc.ListLength(Crv)
-
-
-out_flie = path + name + ".ai"
-
-
-
-if y == True:
-
-
+if BOOL == True:
+    
+    
     sc.doc = Rhino.RhinoDoc.ActiveDoc
-
-    for i in xrange(len_brep):
-        sel_brep = ghpc.ListItem(Brep, i)
-        sc.doc.Objects.AddBrep(sel_brep)
-
-
-    for j in xrange(len_crv):
-        sel_crv = ghpc.ListItem(Crv, j)
-        sc.doc.Objects.AddCurve(sel_crv)
-
-
+    
+    
+    for i in xrange(len(BREP)):
+        sc.doc.Objects.AddBrep(BREP[i])
+        
+        
+    for j in xrange(len(CURVE)):
+        sc.doc.Objects.AddCurve(CURVE[j])
+    
+    
     rs.CurrentView("Perspective")
-
-
+    
+    
     rs.Command(
         'SelAll'
         + ' -Make2d DrawingLayout=CurrentView '
@@ -59,20 +52,20 @@ if y == True:
         + ' CreateHiddenLines=No '
         + ' ShowViewRectangle=No '
         + ' MaintainSourceLayers=Yes _Enter ')
-
-
+    
+    
     rs.CurrentView("Top")
-
-
+    
+    
     rs.Command(
         ' -Export ' + out_flie + ' _Enter'
         + ' SelAll Delete')
-
-
+    
+    
     rs.CurrentView("Perspective")
-
+    
+    
     print "Saved!!"
-
 
 ```
 
